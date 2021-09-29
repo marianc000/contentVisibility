@@ -16,7 +16,6 @@ export default function run() {
     const times =10;
     let p = Promise.resolve().then(hide);
 
-
     for (let i = 0; i < times; i++) {
         p = p.then(() => show()).then(hide);
     }
@@ -28,8 +27,10 @@ export default function run() {
     for (let i = 0; i < times; i++) {
         p = p.then(() => show('overflowHidden')).then(hide);
     }
-    
 
+    for (let i = 0; i < times; i++) {
+        p = p.then(() => show('visibilityHidden')).then(hide);
+    }
 
     for (let i = 0; i < times; i++) {
         p = p.then(() => show('contentVisibility')).then(hide);
