@@ -6,7 +6,7 @@ body {
     height: 100%;
     box-sizing: border-box;
     margin: 0;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .row>div {
@@ -48,13 +48,16 @@ caption {
 }
 
 #root {
-    /* margin-top: 1em; */
     height: 100%;
     background-color: mistyrose;
 }
 
 #root.tableHidden {
   display:none;
+}
+
+#root.visibilityHidden {
+  visibility: hidden;
 }
  
 #root.contentVisibility .row   {
