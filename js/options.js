@@ -11,7 +11,7 @@ function onClick() {
         requestAnimationFrame(() => {
             root.className = this.name;
             console.log(">" + this.name);
-            setTimeout(() => console.log("done with " + this.name));
+            //  setTimeout(() => console.log("done with " + this.name));
         });
     });
 }
